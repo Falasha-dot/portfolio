@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Kouame Kouakou Ulrich – Développeur Web Junior basé à Bouaké, Côte d'Ivoire." />
+  <title>Kouame Kouakou Ulrich | Développeur Web Junior</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Favicon emoji -->
+  <link rel="icon"type="images/png"href="images/favicon.png">
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     NAVBAR
+══════════════════════════════ -->
+<nav>
+  <a href="#hero" class="nav-logo">Ulrich-dev.</a>
+  <ul class="nav-links">
+    <li><a href="#about">À Propos</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#education">Formation</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section id="hero">
+  <canvas id="particles-canvas"></canvas>
+  <div class="hero-glow"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Disponible pour des opportunités
+    </div>
+
+    <h1 class="hero-name">
+      Kouame Kouakou<br />
+      <span class="gradient-text">Ulrich</span>
+    </h1>
+
+    <p class="hero-title">
+      <span id="typed-title"></span><span style="color:var(--cyan);animation:pulse 1s infinite;display:inline-block;margin-left:2px">|</span>
+    </p>
+
+    <p class="hero-tagline">
+      Passionné de technologie, je transforme des idées en solutions web élégantes et fonctionnelles. Basé à Bouaké, ouvert au monde.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">
+        <span>💼</span> Voir mes projets
+      </a>
+      <a href="#contact" class="btn-outline">
+        <span>📬</span> Me contacter
+      </a>
+      <a href="images/CV.pdf" download class="btn-outline">
+        <span>📄</span> Télécharger CV
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Défiler</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     ABOUT
+══════════════════════════════ -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Qui suis-je ?</span>
+    <h2 class="section-title">À Propos de <span>Moi</span></h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-img-wrap reveal-left">
+      <div class="about-img-inner">
+        <!-- Remplace src par ta vraie photo si disponible -->
+        <img src="photo.jpeg" alt="Kouame Kouakou Ulrich" loading="lazy" />
+      </div>
+      <div class="about-img-overlay">
+        <div class="overlay-icon">🎓</div>
+        <div class="overlay-text">
+          <strong>Licence Info</strong>
+          <span>Génie Logiciel · 2025</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-text reveal-right">
+      <p>
+        Bonjour ! Je suis <strong>Kouame Kouakou Ulrich</strong>, étudiant en Licence Informatique option Génie Logiciel à l'Université Nord-Sud de Bouaké. Passionné par la technologie depuis mes premières lignes de code, je cherche à transformer chaque idée en solution numérique concrète.
+      </p>
+      <p>
+        Mon parcours m'a conduit à explorer la création de sites web, les bases de données MySQL et les fondamentaux du développement logiciel. J'ai aussi eu l'opportunité de travailler sur des missions terrain (CNTIG, Orange Money) qui m'ont forgé un sens aigu de la rigueur, de l'organisation et du travail en équipe.
+      </p>
+      <p>
+        Mon objectif : intégrer un environnement stimulant où je peux apprendre, contribuer, et évoluer en tant que développeur full-stack.
+      </p>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number" data-count="3" data-suffix="+">0</div>
+          <div class="stat-label">Projets réalisés</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="3" data-suffix="+">0</div>
+          <div class="stat-label">Années d'étude</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="5" data-suffix="+">0</div>
+          <div class="stat-label">Technos maîtrisées</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SKILLS
+══════════════════════════════ -->
+<section id="skills">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Ce que je sais faire</span>
+    <h2 class="section-title">Mes <span>Compétences</span></h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-category reveal">
+      <div class="skill-cat-title"><span>🖥️</span> Développement Front-End</div>
+      <div class="skill-tags">
+        <span class="skill-tag"><span class="emoji">🌐</span> HTML5</span>
+        <span class="skill-tag"><span class="emoji">🎨</span> CSS3</span>
+        <span class="skill-tag"><span class="emoji">⚡</span> JavaScript</span>
+        <span class="skill-tag"><span class="emoji">📱</span> Responsive Design</span>
+        <span class="skill-tag"><span class="emoji">🔵</span> Bootstrap</span>
+      </div>
+    </div>
+
+    <div class="skill-category reveal" style="transition-delay:0.1s">
+      <div class="skill-cat-title"><span>🗄️</span> Back-End & Base de données</div>
+      <div class="skill-tags">
+        <span class="skill-tag"><span class="emoji">🐬</span> MySQL</span>
+        <span class="skill-tag"><span class="emoji">🐘</span> PHP</span>
+        <span class="skill-tag"><span class="emoji">🗃️</span> SQL</span>
+        <span class="skill-tag"><span class="emoji">🔧</span> phpMyAdmin</span>
+      </div>
+    </div>
+
+    <div class="skill-category reveal" style="transition-delay:0.2s">
+      <div class="skill-cat-title"><span>🛠️</span> Outils & CMS</div>
+      <div class="skill-tags">
+        <span class="skill-tag"><span class="emoji">🐙</span> Git & GitHub</span>
+        <span class="skill-tag"><span class="emoji">🔷</span> VS Code</span>
+        <span class="skill-tag"><span class="emoji">🌐</span> WordPress</span>
+        <span class="skill-tag"><span class="emoji">🗺️</span> KoboCollect</span>
+        <span class="skill-tag"><span class="emoji">📊</span> Microsoft Office</span>
+      </div>
+    </div>
+
+    <div class="skill-category reveal" style="transition-delay:0.3s">
+      <div class="skill-cat-title"><span>🤝</span> Soft Skills</div>
+      <div class="skill-tags">
+        <span class="skill-tag"><span class="emoji">🎯</span> Rigueur</span>
+        <span class="skill-tag"><span class="emoji">💡</span> Esprit d'initiative</span>
+        <span class="skill-tag"><span class="emoji">👥</span> Esprit d'équipe</span>
+        <span class="skill-tag"><span class="emoji">📈</span> Leadership</span>
+        <span class="skill-tag"><span class="emoji">🌍</span> Adaptabilité</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     PROJECTS
+══════════════════════════════ -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Ce que j'ai construit</span>
+    <h2 class="section-title">Mes <span>Projets</span></h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- Projet 1 -->
+    <article class="project-card reveal">
+      <div class="project-img">
+        <div class="project-img-placeholder">
+          <span>🛒</span>
+          <span>E-Commerce</span>
+        </div>
+        <div class="project-overlay">
+          <a href="#" class="overlay-btn primary" target="_blank" rel="noopener">
+            <span>🔗</span> Démo
+          </a>
+          <a href="https://github.com/kouameulrich706" class="overlay-btn secondary" target="_blank" rel="noopener">
+            <span>🐙</span> GitHub
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">PHP</span>
+        </div>
+        <h3 class="project-title">Site E-Commerce</h3>
+        <p class="project-desc">
+          Conception d'un site e-commerce avec catalogue de produits, panier d'achat, et gestion des commandes via une interface d'administration.
+        </p>
+      </div>
+    </article>
+
+    <!-- Projet 2 -->
+    <article class="project-card reveal" style="transition-delay:0.1s">
+      <div class="project-img">
+        <div class="project-img-placeholder">
+          <span>🌐</span>
+          <span>WordPress</span>
+        </div>
+        <div class="project-overlay">
+          <a href="#" class="overlay-btn primary" target="_blank" rel="noopener">
+            <span>🔗</span> Démo
+          </a>
+          <a href="https://github.com/kouameulrich706" class="overlay-btn secondary" target="_blank" rel="noopener">
+            <span>🐙</span> GitHub
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">WordPress</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">Elementor</span>
+        </div>
+        <h3 class="project-title">Site Vitrine WordPress</h3>
+        <p class="project-desc">
+          Création d'un site vitrine pour une PME locale avec pages de services, blog intégré et formulaire de contact optimisé.
+        </p>
+      </div>
+    </article>
+
+    <!-- Projet 3 -->
+    <article class="project-card reveal" style="transition-delay:0.2s">
+      <div class="project-img">
+        <div class="project-img-placeholder">
+          <span>🗄️</span>
+          <span>Gestion BDD</span>
+        </div>
+        <div class="project-overlay">
+          <a href="#" class="overlay-btn primary" target="_blank" rel="noopener">
+            <span>🔗</span> Démo
+          </a>
+          <a href="https://github.com/kouameulrich706" class="overlay-btn secondary" target="_blank" rel="noopener">
+            <span>🐙</span> GitHub
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag">PHP</span>
+          <span class="project-tag">HTML/CSS</span>
+        </div>
+        <h3 class="project-title">Application de Gestion</h3>
+        <p class="project-desc">
+          Application web de gestion d'étudiants avec système d'authentification, CRUD complet et génération de rapports PDF.
+        </p>
+      </div>
+    </article>
+
+  </div>
+
+  <div style="text-align:center;margin-top:2.5rem;" class="reveal">
+    <a href="https://github.com/kouameulrich706" target="_blank" rel="noopener" class="btn-outline">
+      <span>🐙</span> Voir tous mes projets sur GitHub
+    </a>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     EDUCATION
+══════════════════════════════ -->
+<section id="education">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Mon Parcours</span>
+    <h2 class="section-title">Formation & <span>Expériences</span></h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="education-wrap">
+
+    <!-- Formations -->
+    <div class="edu-card reveal">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <div class="edu-degree">Licence en Informatique – Option Génie Logiciel</div>
+        <div class="edu-school">Université Nord-Sud · Bouaké</div>
+        <div class="edu-date">📅 2024 – 2025</div>
+        <p class="edu-desc">Programmation orientée objet, bases de données, développement web, algorithmique et structures de données.</p>
+      </div>
+    </div>
+
+    <div class="edu-card reveal" style="transition-delay:0.1s">
+      <div class="edu-icon">🌐</div>
+      <div>
+        <div class="edu-degree">Formation · Création de Sites WordPress</div>
+        <div class="edu-school">Formation Additionnelle</div>
+        <div class="edu-date">📅 Formation continue</div>
+        <p class="edu-desc">Conception et personnalisation de sites web avec WordPress, Elementor, plugins SEO et optimisation des performances.</p>
+      </div>
+    </div>
+
+    <div class="edu-card reveal" style="transition-delay:0.15s">
+      <div class="edu-icon">📋</div>
+      <div>
+        <div class="edu-degree">Formation · Management d'Entreprise & Leadership</div>
+        <div class="edu-school">Formation Personnelle</div>
+        <div class="edu-date">📅 Formation continue</div>
+        <p class="edu-desc">Gestion de projet, leadership, développement personnel et stratégies de management.</p>
+      </div>
+    </div>
+
+    <!-- Expériences -->
+    <div class="edu-card reveal" style="transition-delay:0.2s">
+      <div class="edu-icon">📡</div>
+      <div>
+        <div class="edu-degree">Agent Enquêteur – Terrain E-Commune</div>
+        <div class="edu-school">CNTIG · Comité National de Télédétection et d'Information Géographique</div>
+        <div class="edu-date">📅 Nov 2025 – Jan 2026</div>
+        <p class="edu-desc">Collecte de données géographiques sur tablette via KoboCollect dans le cadre du projet E-Commune à Bouaké.</p>
+      </div>
+    </div>
+
+    <div class="edu-card reveal" style="transition-delay:0.25s">
+      <div class="edu-icon">🟠</div>
+      <div>
+        <div class="edu-degree">Agent OMCI – Recrutement Marchands</div>
+        <div class="edu-school">Orange Money Côte d'Ivoire</div>
+        <div class="edu-date">📅 2026</div>
+        <p class="edu-desc">Recrutement de marchands via l'application PDV+ pour le développement du réseau Orange Money.</p>
+      </div>
+    </div>
+
+    <div class="edu-card reveal" style="transition-delay:0.3s">
+      <div class="edu-icon">📶</div>
+      <div>
+        <div class="edu-degree">Agent Commercial</div>
+        <div class="edu-school">Moov Africa · Bouaké</div>
+        <div class="edu-date">📅 2023</div>
+        <p class="edu-desc">Promotion des services Moov Africa dans la région du Gbêkê – distribution et identification des puces.</p>
+      </div>
+    </div>
+
+    <!-- Diplômes antérieurs -->
+    <div class="edu-card reveal" style="transition-delay:0.35s">
+      <div class="edu-icon">📜</div>
+      <div>
+        <div class="edu-degree">Baccalauréat Série D</div>
+        <div class="edu-school">Lycée Moderne 3 de Divo</div>
+        <div class="edu-date">📅 2021 – 2022</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CONTACT
+══════════════════════════════ -->
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Travaillons Ensemble</span>
+    <h2 class="section-title">Me <span>Contacter</span></h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="contact-wrap">
+    <div class="contact-info reveal-left">
+      <h3>Discutons de votre projet 💬</h3>
+      <p>
+        Disponible pour des missions freelance, stages ou opportunités d'emploi. N'hésitez pas à me contacter — je réponds généralement sous 24h.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:kouameulrich706@gmail.com" class="contact-link">
+          <div class="contact-link-icon">📧</div>
+          <div class="contact-link-text">
+            <strong>Email</strong>
+            <span>kouameulrich706@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:+2250789186022" class="contact-link">
+          <div class="contact-link-icon">📞</div>
+          <div class="contact-link-text">
+            <strong>Téléphone</strong>
+            <span>+225 07 89 18 60 22</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link">
+          <div class="contact-link-icon">💼</div>
+          <div class="contact-link-text">
+            <strong>LinkedIn</strong>
+            <span>Kouame Kouakou Ulrich</span>
+          </div>
+        </a>
+        <a href="https://github.com/kouameulrich706" target="_blank" rel="noopener" class="contact-link">
+          <div class="contact-link-icon">🐙</div>
+          <div class="contact-link-text">
+            <strong>GitHub</strong>
+            <span>kouameulrich706</span>
+          </div>
+        </a>
+        <a href="images/CV.pdf" download class="contact-link">
+          <div class="contact-link-icon">📄</div>
+          <div class="contact-link-text">
+            <strong>Curriculum Vitae</strong>
+            <span>Télécharger mon CV (PDF)</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <form id="contact-form" class="contact-form reveal-right" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="votre@email.com" required autocomplete="email" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="subject">Sujet</label>
+        <input type="text" id="subject" name="subject" placeholder="Ex : Proposition de collaboration" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Décrivez votre projet ou votre demande…" required></textarea>
+      </div>
+      <button type="submit" class="btn-send">
+        <span>📨</span> Envoyer le message
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+  <p>
+    Conçu & développé avec ❤️ par <strong>Kouame Kouakou Ulrich</strong> · 2025
+    &nbsp;·&nbsp;
+    <a href="mailto:kouameulrich706@gmail.com">kouameulrich706@gmail.com</a>
+  </p>
+</footer>
+
+<!-- Toast notification -->
+<div id="toast" class="toast" role="alert" aria-live="polite">
+  <span class="toast-icon"></span>
+  <span class="toast-msg"></span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
