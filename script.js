@@ -170,32 +170,66 @@
   counters.forEach(c => observer.observe(c));
 })();
 
-/* ── Contact form ── */
-(function initForm() {
-  const form = document.getElementById('contact-form');
-  const toast = document.getElementById('toast');
-  if (!form) return;
+/* ==========================
+   CONTACT FORM EMAILJS
+========================== */
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const btn = form.querySelector('.btn-send');
-    btn.disabled = true;
-    btn.innerHTML = '<span>⏳</span> Envoi en cours…';
+(function () {
 
-    setTimeout(() => {
-      btn.disabled = false;
-      btn.innerHTML = '<span>📨</span> Envoyer le message';
-      form.reset();
-      showToast('✅', 'Message envoyé ! Je vous répondrai bientôt.');
-    }, 1500);
-  });
+    const form = document.getElementById("contact-form");
 
-  function showToast(icon, msg) {
-    toast.querySelector('.toast-icon').textContent = icon;
-    toast.querySelector('.toast-msg').textContent = msg;
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 3500);
-  }
+    const btn = document.getElementById("sendBtn");
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        btn.disabled = true;
+
+        btn.innerHTML = "⏳ Envoi en cours...";
+
+        emailjs.sendForm(
+
+            "service_scx8c9e",
+
+            "template_h8lzbrk",
+
+            this
+
+        )
+
+        .then(function () {
+
+            btn.innerHTML = "✅ Message envoyé";
+
+            form.reset();
+
+            showToast("✅", "Votre message a été envoyé avec succès !");
+
+            setTimeout(function () {
+
+                btn.disabled = false;
+
+                btn.innerHTML = "📨 Envoyer le message";
+
+            }, 2500);
+
+        })
+
+        .catch(function (error) {
+
+            console.log(error);
+
+            btn.disabled = false;
+
+            btn.innerHTML = "📨 Envoyer le message";
+
+            showToast("❌", "Erreur lors de l'envoi.");
+
+        });
+
+    });
+
 })();
 
 /* ── Skill tags hover ripple ── */
