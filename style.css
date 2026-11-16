@@ -1099,3 +1099,95 @@ footer a:hover { opacity: 0.7; }
     }
 
 }
+
+
+/* ========================================
+   ICÔNES PROFESSIONNELLES DU PORTFOLIO
+======================================== */
+
+/* Icônes des titres de catégories */
+.skill-cat-title > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.skill-cat-title > span i {
+    font-size: 20px;
+    color: var(--cyan);
+}
+
+/* Icônes des technologies */
+.skill-tag .emoji {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+}
+
+.skill-tag .emoji i {
+    font-size: 18px;
+    line-height: 1;
+}
+
+/* Harmonisation des transitions */
+.skill-tag i {
+    transition: transform 0.3s ease;
+}
+
+.skill-tag:hover i {
+    transform: scale(1.15);
+}
+
+
+/* ========================================
+   ICÔNES DES AUTRES SECTIONS
+======================================== */
+
+/* Boutons du Hero */
+.hero-ctas i {
+    margin-right: 8px;
+}
+
+/* Images des projets */
+.project-img-placeholder > i {
+    font-size: 42px;
+    margin-bottom: 12px;
+    color: var(--cyan);
+}
+
+/* Formation et expériences */
+.edu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edu-icon i {
+    font-size: 24px;
+    color: var(--cyan);
+}
+
+.edu-title i,
+.edu-date i {
+    margin-right: 8px;
+    color: white;
+}
+
+/* Contact */
+.contact-link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-link-icon i {
+    font-size: 21px;
+    color:white;
+}
+
+/* Icônes des boutons de projets */
+.overlay-btn i {
+    margin-right: 7px;
+}

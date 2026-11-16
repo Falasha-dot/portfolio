@@ -7,6 +7,8 @@
   <title>Kouame Kouakou Ulrich | Développeur Web Junior</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Icônes officielles des technologies de développement -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <!-- Favicon emoji -->
   <link rel="icon"type="images/png"href="images/favicon.png">
 </head>
@@ -55,17 +57,25 @@
       Passionné de technologie, je transforme des idées en solutions web élégantes et fonctionnelles. Basé à en côte d'Ivoire, ouvert au monde.
     </p>
 
-    <div class="hero-ctas">
-      <a href="#projects" class="btn-primary">
-        <span>💼</span> Voir mes projets
-      </a>
-      <a href="#contact" class="btn-outline">
-        <span>📬</span> Me contacter
-      </a>
-      <a href="images/CV.pdf" download class="btn-outline">
-        <span>📄</span> Télécharger CV
-      </a>
-    </div>
+    
+<div class="hero-ctas">
+
+  <a href="#projects" class="btn-primary">
+    <i class="fa-solid fa-briefcase"></i>
+    Voir mes projets
+  </a>
+
+  <a href="#contact" class="btn-outline">
+    <i class="fa-solid fa-envelope"></i>
+    Me contacter
+  </a>
+
+  <a href="images/CV.pdf" download class="btn-outline">
+    <i class="fa-solid fa-file-pdf"></i>
+    Télécharger CV
+  </a>
+
+</div>
   </div>
 
   <div class="hero-scroll">
@@ -91,7 +101,7 @@
         <img src="photo.jpeg" alt="Kouame Kouakou Ulrich" loading="lazy" />
       </div>
       <div class="about-img-overlay">
-        <div class="overlay-icon">🎓</div>
+        <div class="overlay-icon"><i class="fa-solid fa-graduation-cap"></i></div>
         <div class="overlay-text">
           <strong>Licence Info</strong>
           <span>Génie Logiciel · 2025</span>
@@ -138,50 +148,163 @@
     <div class="section-line"></div>
   </div>
 
-  <div class="skills-grid">
-    <div class="skill-category reveal">
-      <div class="skill-cat-title"><span>🖥️</span> Développement Front-End</div>
-      <div class="skill-tags">
-        <span class="skill-tag"><span class="emoji">🌐</span> HTML5</span>
-        <span class="skill-tag"><span class="emoji">🎨</span> CSS3</span>
-        <span class="skill-tag"><span class="emoji">⚡</span> JavaScript</span>
-        <span class="skill-tag"><span class="emoji">📱</span> Responsive Design</span>
-        <span class="skill-tag"><span class="emoji">🔵</span> Bootstrap</span>
-      </div>
+
+
+<div class="skills-grid">
+
+  <!-- FRONT-END -->
+  <div class="skill-category reveal">
+
+    <div class="skill-cat-title">
+      <span><i class="fa-solid fa-code"></i></span>
+      Développement Front-End
     </div>
 
-    <div class="skill-category reveal" style="transition-delay:0.1s">
-      <div class="skill-cat-title"><span>🗄️</span> Back-End & Base de données</div>
-      <div class="skill-tags">
-        <span class="skill-tag"><span class="emoji">🐬</span> MySQL</span>
-        <span class="skill-tag"><span class="emoji">🐘</span> PHP</span>
-        <span class="skill-tag"><span class="emoji">🗃️</span> SQL</span>
-        <span class="skill-tag"><span class="emoji">🔧</span> phpMyAdmin</span>
-      </div>
-    </div>
+    <div class="skill-tags">
 
-    <div class="skill-category reveal" style="transition-delay:0.2s">
-      <div class="skill-cat-title"><span>🛠️</span> Outils & CMS</div>
-      <div class="skill-tags">
-        <span class="skill-tag"><span class="emoji">🐙</span> Git & GitHub</span>
-        <span class="skill-tag"><span class="emoji">🔷</span> VS Code</span>
-        <span class="skill-tag"><span class="emoji">🌐</span> WordPress</span>
-        <span class="skill-tag"><span class="emoji">🗺️</span> KoboCollect</span>
-        <span class="skill-tag"><span class="emoji">📊</span> Microsoft Office</span>
-      </div>
-    </div>
+      <span class="skill-tag">
+        <span class="emoji"><i class="devicon-html5-plain colored"></i></span>
+        HTML5
+      </span>
 
-    <div class="skill-category reveal" style="transition-delay:0.3s">
-      <div class="skill-cat-title"><span>🤝</span> Soft Skills</div>
-      <div class="skill-tags">
-        <span class="skill-tag"><span class="emoji">🎯</span> Rigueur</span>
-        <span class="skill-tag"><span class="emoji">💡</span> Esprit d'initiative</span>
-        <span class="skill-tag"><span class="emoji">👥</span> Esprit d'équipe</span>
-        <span class="skill-tag"><span class="emoji">📈</span> Leadership</span>
-        <span class="skill-tag"><span class="emoji">🌍</span> Adaptabilité</span>
-      </div>
+      <span class="skill-tag">
+        <span class="emoji"><i class="devicon-css3-plain colored"></i></span>
+        CSS3
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="devicon-javascript-plain colored"></i></span>
+        JavaScript
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="fa-solid fa-mobile-screen-button"></i></span>
+        Responsive Design
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="devicon-bootstrap-plain colored"></i></span>
+        Bootstrap
+      </span>
+
     </div>
   </div>
+
+  <!-- BACK-END -->
+  <div class="skill-category reveal" style="transition-delay:0.1s">
+
+    <div class="skill-cat-title">
+      <span><i class="fa-solid fa-database"></i></span>
+      Back-End & Base de données
+    </div>
+
+    <div class="skill-tags">
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="devicon-mysql-original colored"></i></span>
+        MySQL
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="devicon-php-plain colored"></i></span>
+        PHP
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="fa-solid fa-table"></i></span>
+        SQL
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+        phpMyAdmin
+      </span>
+
+    </div>
+  </div>
+
+  <!-- OUTILS -->
+  <div class="skill-category reveal" style="transition-delay:0.2s">
+
+    <div class="skill-cat-title">
+      <span><i class="fa-solid fa-screwdriver-wrench"></i></span>
+      Outils & CMS
+    </div>
+
+    <div class="skill-tags">
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="devicon-git-plain colored"></i></span>
+        Git
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="devicon-github-original"></i></span>
+        GitHub
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="devicon-vscode-plain colored"></i></span>
+        VS Code
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="devicon-wordpress-plain colored"></i></span>
+        WordPress
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="fa-solid fa-clipboard-list"></i></span>
+        KoboCollect
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="fa-brands fa-microsoft"></i></span>
+        Microsoft Office
+      </span>
+
+    </div>
+  </div>
+
+  <!-- SOFT SKILLS -->
+  <div class="skill-category reveal" style="transition-delay:0.3s">
+
+    <div class="skill-cat-title">
+      <span><i class="fa-solid fa-users"></i></span>
+      Soft Skills
+    </div>
+
+    <div class="skill-tags">
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="fa-solid fa-bullseye"></i></span>
+        Rigueur
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="fa-solid fa-lightbulb"></i></span>
+        Esprit d'initiative
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="fa-solid fa-people-group"></i></span>
+        Esprit d'équipe
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="fa-solid fa-chart-line"></i></span>
+        Leadership
+      </span>
+
+      <span class="skill-tag">
+        <span class="emoji"><i class="fa-solid fa-globe"></i></span>
+        Adaptabilité
+      </span>
+
+    </div>
+  </div>
+
+</div>
 </section>
 
 <!-- ══════════════════════════════
@@ -200,15 +323,15 @@
     <article class="project-card reveal">
       <div class="project-img">
         <div class="project-img-placeholder">
-          <span>🛒</span>
-          <span>E-Commerce</span>
-        </div>
+  <i class="fa-solid fa-cart-shopping"></i>
+  <span>E-Commerce</span>
+</div>
         <div class="project-overlay">
           <a href="#" class="overlay-btn primary" target="_blank" rel="noopener">
-            <span>🔗</span> Démo
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Démo
           </a>
           <a href="https://github.com/Falasha-dot" class="overlay-btn secondary" target="_blank" rel="noopener">
-            <span>🐙</span> GitHub
+            <i class="fa-brands fa-github"></i> GitHub
           </a>
         </div>
       </div>
@@ -230,15 +353,15 @@
     <article class="project-card reveal" style="transition-delay:0.1s">
       <div class="project-img">
         <div class="project-img-placeholder">
-          <span>🌐</span>
-          <span>WordPress</span>
-        </div>
+  <i class="devicon-wordpress-plain"></i>
+  <span>WordPress</span>
+</div>
         <div class="project-overlay">
           <a href="#" class="overlay-btn primary" target="_blank" rel="noopener">
-            <span>🔗</span> Démo
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Démo
           </a>
           <a href="https://github.com/Falasha-dot" class="overlay-btn secondary" target="_blank" rel="noopener">
-            <span>🐙</span> GitHub
+            <i class="fa-brands fa-github"></i> GitHub
           </a>
         </div>
       </div>
@@ -259,15 +382,15 @@
     <article class="project-card reveal" style="transition-delay:0.2s">
       <div class="project-img">
         <div class="project-img-placeholder">
-          <span>🗄️</span>
-          <span>Gestion BDD</span>
-        </div>
+  <i class="fa-solid fa-database"></i>
+  <span>Gestion BDD</span>
+</div>
         <div class="project-overlay">
           <a href="#" class="overlay-btn primary" target="_blank" rel="noopener">
-            <span>🔗</span> Démo
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Démo
           </a>
           <a href="https://github.com/Falasha-dot" class="overlay-btn secondary" target="_blank" rel="noopener">
-            <span>🐙</span> GitHub
+            <i class="fa-brands fa-github"></i> GitHub
           </a>
         </div>
       </div>
@@ -288,7 +411,7 @@
 
   <div style="text-align:center;margin-top:2.5rem;" class="reveal">
     <a href="https://github.com/Falasha-dot" target="_blank" rel="noopener" class="btn-outline">
-      <span>🐙</span> Voir tous mes projets sur GitHub
+      <i class="fa-brands fa-github"></i> Voir tous mes projets sur GitHub
     </a>
   </div>
 </section>
@@ -307,10 +430,14 @@
 
     <!-- Diplômes -->
     <div class="edu-column reveal">
-        <h3 class="edu-title">🎓 Diplômes</h3>
+        <h3 class="edu-title">
+            <i class="fa-solid fa-graduation-cap"></i>
+            Diplômes</h3>
 
         <div class="edu-card">
-            <div class="edu-icon">🎓</div>
+            <div class="edu-icon">
+                <i class="fa-solid fa-user-graduate"></i>
+            </div>
 
             <div>
                 <div class="edu-degree">
@@ -322,7 +449,7 @@
                 </div>
 
                 <div class="edu-date">
-                    📅 2024 - 2025
+                    <i class="fa-regular fa-calendar-days"></i> 2024 - 2025
                 </div>
 
                 <p class="edu-desc">
@@ -335,7 +462,7 @@
 
         <div class="edu-card">
 
-            <div class="edu-icon">📜</div>
+            <div class="edu-icon"><i class="fa-solid fa-scroll"></i></div>
 
             <div>
 
@@ -348,7 +475,7 @@
                 </div>
 
                 <div class="edu-date">
-                    📅 2021 - 2022
+                     <i class="fa-regular fa-calendar-days"></i> 2021 - 2022
                 </div>
 
             </div>
@@ -362,12 +489,12 @@
     <div class="edu-column reveal">
 
         <h3 class="edu-title">
-            📚 Formations
+            <i class="fa-solid fa-book-open"></i> Formations
         </h3>
 
         <div class="edu-card">
 
-            <div class="edu-icon">🌐</div>
+            <div class="edu-icon"><i class="devicon-wordpress-plain"></i></div>
 
             <div>
 
@@ -380,7 +507,7 @@
                 </div>
 
                 <div class="edu-date">
-                    📅 Formation Continue
+                     <i class="fa-regular fa-calendar-days"></i>Formation Continue
                 </div>
 
             </div>
@@ -389,7 +516,7 @@
 
         <div class="edu-card">
 
-            <div class="edu-icon">📋</div>
+            <div class="edu-icon"><i class="fa-solid fa-clipboard-check"></i></div>
 
             <div>
 
@@ -402,7 +529,7 @@
                 </div>
 
                 <div class="edu-date">
-                    📅 Formation Continue
+                     <i class="fa-regular fa-calendar-days"></i> Formation Continue
                 </div>
 
             </div>
@@ -416,12 +543,12 @@
     <div class="edu-column reveal">
 
         <h3 class="edu-title">
-            💼 Expériences
+            <i class="fa-solid fa-briefcase"></i>Expériences
         </h3>
 
         <div class="edu-card">
 
-            <div class="edu-icon">📡</div>
+            <div class="edu-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
 
             <div>
 
@@ -434,7 +561,7 @@
                 </div>
 
                 <div class="edu-date">
-                    📅 2025 - 2026
+                     <i class="fa-regular fa-calendar-days"></i>2025 - 2026
                 </div>
 
             </div>
@@ -443,7 +570,7 @@
 
         <div class="edu-card">
 
-            <div class="edu-icon">🟠</div>
+            <div class="edu-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
 
             <div>
 
@@ -456,7 +583,7 @@
                 </div>
 
                 <div class="edu-date">
-                    📅 2026
+                     <i class="fa-regular fa-calendar-days"></i> 2026
                 </div>
 
             </div>
@@ -465,7 +592,7 @@
 
         <div class="edu-card">
 
-            <div class="edu-icon">📶</div>
+            <div class="edu-icon"><i class="fa-solid fa-signal"></i></div>
 
             <div>
 
@@ -478,7 +605,7 @@
                 </div>
 
                 <div class="edu-date">
-                    📅 2023
+                     <i class="fa-regular fa-calendar-days"></i> 2023
                 </div>
 
             </div>
@@ -502,41 +629,41 @@
 
   <div class="contact-wrap">
     <div class="contact-info reveal-left">
-      <h3>Discutons de votre projet 💬</h3>
+      <h3>Discutons de votre projet <i class="fa-solid fa-comments"></i></h3>
       <p>
         Disponible pour des missions freelance, stages ou opportunités d'emploi. N'hésitez pas à me contacter — je réponds généralement sous 24h.
       </p>
       <div class="contact-links">
         <a href="mailto:kouameulrich706@gmail.com" class="contact-link">
-          <div class="contact-link-icon">📧</div>
+          <div class="contact-link-icon"> <i class="fa-solid fa-envelope"></i></div>
           <div class="contact-link-text">
             <strong>Email</strong>
             <span>kouameulrich706@gmail.com</span>
           </div>
         </a>
         <a href="tel:+2250789186022" class="contact-link">
-          <div class="contact-link-icon">📞</div>
+          <div class="contact-link-icon"><i class="fa-solid fa-phone"></i></div>
           <div class="contact-link-text">
             <strong>Téléphone</strong>
             <span>+225 07 89 18 60 22</span>
           </div>
         </a>
         <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link">
-          <div class="contact-link-icon">💼</div>
+          <div class="contact-link-icon"> <i class="fa-brands fa-linkedin-in"></i></div>
           <div class="contact-link-text">
             <strong>LinkedIn</strong>
             <span>Kouame Kouakou Ulrich</span>
           </div>
         </a>
         <a href="https://github.com/kouameulrich706" target="_blank" rel="noopener" class="contact-link">
-          <div class="contact-link-icon">🐙</div>
+          <div class="contact-link-icon"> <i class="fa-brands fa-github"></i></div>
           <div class="contact-link-text">
             <strong>GitHub</strong>
             <span>Falasha-dot</span>
           </div>
         </a>
         <a href="images/CV.pdf" download class="contact-link">
-          <div class="contact-link-icon">📄</div>
+          <div class="contact-link-icon"><i class="fa-solid fa-file-pdf"></i></div>
           <div class="contact-link-text">
             <strong>Curriculum Vitae</strong>
             <span>Télécharger mon CV (PDF)</span>
@@ -565,8 +692,9 @@
         <textarea id="message" name="message" placeholder="Décrivez votre projet ou votre demande…" required></textarea>
       </div>
       <button type="submit" class="btn-send" id="sendBtn">
-        <span>📨</span> Envoyer le message
-      </button>
+  <i class="fa-solid fa-paper-plane"></i>
+  Envoyer le message
+</button>
     </form>
   </div>
 </section>
